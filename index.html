@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa hàng trực tuyến | Mua sắm dễ dàng</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#ff5722", secondary: "#1f2937" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Inter', sans-serif;
+      }
+      .hero-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://readdy.ai/api/search-image?query=modern%2520ecommerce%2520store%2520with%2520stylish%2520products%2520displayed%2520on%2520wooden%2520shelves%252C%2520soft%2520ambient%2520lighting%252C%2520minimalist%2520interior%2520design%252C%2520plants%2520in%2520corners%252C%2520customers%2520browsing%2520products%252C%2520high-end%2520retail%2520environment%252C%2520professional%2520photography&width=1920&height=1080&seq=1&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      }
+      .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+   <!-- Header -->
+<header class="bg-black shadow-sm sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Links -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="#" class="text-white hover:text-primary transition-colors">
+        Nó hoạt động như thế nào
+      </a>
+      <a href="#" class="text-white hover:text-primary transition-colors">
+        Đối tác của chúng tôi
+      </a>
+      <a href="#" class="text-white hover:text-primary transition-colors">
+        Các câu hỏi thường gặp
+      </a>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Mobile Menu Button Only -->
+    <button
+      class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+    >
+      <i class="ri-menu-line ri-lg"></i>
+    </button>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+<section class="relative min-h-[600px] flex items-center justify-center bg-black text-white">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img
+      src="banner.jpg"
+      alt="Trạm trú ẩn"
+      class="w-full h-full object-cover object-center"
+    />
+    <!-- Layer mờ tối + blur -->
+   <div class="absolute inset-0 bg-black/30 backdrop-blur-[1px]"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 px-4 text-center max-w-2xl">
+    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+      Trạm trú ẩn an toàn là gì?
+    </h1>
+    <p class="text-lg leading-relaxed">
+      Trạm trú ẩn an toàn là một mô hình tích hợp giữa công nghệ giám sát thông minh,
+      cảnh báo khẩn cấp, và kết nối đa ngành nhằm bảo vệ an toàn cho phụ nữ và người dân
+      tại các không gian công cộng. Dựa trên cảm hứng từ mô hình "Abrigo Amigo" ở Brazil,
+      phiên bản tại Việt Nam được cải tiến để phù hợp với bối cảnh xã hội, điều kiện hạ tầng
+      và thói quen sử dụng công nghệ của người dân đô thị.
+    </p>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">
+      Trạm trú ẩn thông minh hoạt động như thế nào?
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start justify-center">
+      <!-- Nội dung -->
+      <div class="space-y-6 text-gray-700 leading-relaxed text-justify text-base max-w-[600px]">
+        <!-- Chức năng linh hoạt theo thời gian -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">1. Chuyển đổi chức năng theo thời gian</h3>
+          <p>
+            Trạm trú ẩn an toàn thực chất là một biển quảng cáo kỹ thuật số đa chức năng,
+            hoạt động linh hoạt theo thời gian trong ngày. Ban ngày là bảng quảng cáo LED
+            thông thường, hiển thị nội dung thương mại từ các doanh nghiệp tài trợ.
+            Sau 20h tối, màn hình tự động chuyển sang chế độ an ninh với giao diện cảnh báo,
+            phát sáng rõ ràng để người đi đường dễ dàng nhận biết.
+          </p>
+        </div>
+
+        <!-- Cảm biến và AI -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">2. Kích hoạt cảm biến & trí tuệ nhân tạo</h3>
+          <p>
+            Ở chế độ an ninh, trạm sẽ kích hoạt hệ thống cảm biến thông minh. Camera hồng ngoại
+            kết hợp AI có khả năng phân tích biểu cảm, nhận diện trạng thái bất thường như
+            lo lắng, sợ hãi, hoặc hành vi đáng ngờ. Micro tích hợp nhận diện từ khóa khẩn cấp như
+            “cứu với”, “nguy hiểm”, “giúp tôi” – cho phép kích hoạt cảnh báo ngay cả khi không thao tác trực tiếp.
+          </p>
+        </div>
+
+        <!-- Phản ứng khẩn cấp -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">3. Phản ứng khẩn cấp</h3>
+          <p>
+            Khi phát hiện tình huống bất thường, trạm sẽ phát âm thanh cảnh báo, bật đèn chiếu sáng mạnh
+            và gửi tín hiệu tới trung tâm điều phối hoặc lực lượng chức năng gần nhất để can thiệp.
+          </p>
+        </div>
+
+        <!-- Kết nối & độ bền thiết bị -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">4. Kết nối ổn định & bền bỉ</h3>
+          <p>
+            Thiết bị sử dụng kết nối mạng 5G (dự phòng 4G) cùng hệ thống kiểm tra kết nối định kỳ.
+            Vỏ trạm chống chịu thời tiết, có nguồn điện dự phòng – đảm bảo hoạt động liên tục kể cả
+            khi mất điện hoặc thời tiết xấu.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hình ảnh minh họa -->
+      <div class="relative h-[500px] rounded-xl overflow-hidden shadow-md">
+        <img
+          src="IMG_7375.PNG"
+          alt="Trạm trú ẩn thông minh"
+          class="w-full h-full object-cover object-top"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Professional Staff Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <!-- Image (bên trái) -->
+      <div class="md:w-1/2 rounded-xl overflow-hidden order-1 md:order-none">
+        <img
+          src="pvu.JPG"
+          alt="Nhân viên hỗ trợ"
+          class="w-full h-full object-cover object-center"
+        />
+      </div>
+
+      <!-- Text Content (bên phải) -->
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-orange-600 mb-6">
+          Nhân viên phục vụ chuyên nghiệp
+        </h2>
+        <div class="space-y-4 text-gray-800 text-lg leading-relaxed">
+          <p>
+            Trung tâm điều phối khẩn cấp vận hành 24/7 với đội ngũ kỹ thuật viên, điều phối viên an ninh được huấn luyện chuyên nghiệp.
+          </p>
+          <p>
+            Các tín hiệu từ trạm trú ẩn sẽ được xử lý trong vòng dưới 10 giây, kết nối với lực lượng an ninh địa phương, bảo vệ cộng đồng, hoặc ứng dụng hỗ trợ an toàn cá nhân.
+          </p>
+          <p>
+            Ngoài ra, người dân xung quanh có thể được huy động tham gia chương trình <strong>“hỗ trợ khẩn cấp cộng đồng”</strong> qua app – tạo nên mạng lưới can thiệp nhanh tại chỗ.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Brands Section -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-5xl font-bold text-gray-800">Thương hiệu đối tác</h2>
+    </div>
+
+    <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20">
+      <!-- Logo 1 -->
+      <div class="w-32 h-32 flex items-center justify-center grayscale hover:grayscale-0 transition rounded-lg shadow-sm bg-white p-4">
+        <img src="tcb.png" alt="Brand 1" class="h-full object-contain" />
+      </div>
+      <!-- Logo 2 -->
+      <div class="w-32 h-32 flex items-center justify-center grayscale hover:grayscale-0 transition rounded-lg shadow-sm bg-white p-4">
+        <img src="vt.png" alt="Brand 2" class="h-full object-contain" />
+      </div>
+      <!-- Logo 3 -->
+      <div class="w-32 h-32 flex items-center justify-center grayscale hover:grayscale-0 transition rounded-lg shadow-sm bg-white p-4">
+        <img src="vingr.png" alt="Brand 3" class="h-full object-contain" />
+      </div>
+      <!-- Logo 4 -->
+      <div class="w-32 h-32 flex items-center justify-center grayscale hover:grayscale-0 transition rounded-lg shadow-sm bg-white p-4">
+        <img src="fpt.png" alt="Brand 4" class="h-full object-contain" />
+      </div>
+      <!-- Logo 5 -->
+      <div class="w-32 h-32 flex items-center justify-center grayscale hover:grayscale-0 transition rounded-lg shadow-sm bg-white p-4">
+        <img src="vnm.png" alt="Brand 5" class="h-full object-contain" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+
+    
+ <!-- FAQ Section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">CÁC CÂU HỎI THƯỜNG GẶP</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+
+      <!-- Câu hỏi 1 -->
+      <div class="bg-white rounded-lg shadow-sm px-6 py-4">
+        <h3 class="text-lg font-semibold mb-2">
+          1. Ai có thể sử dụng trạm trú ẩn an toàn?
+        </h3>
+        <p class="text-gray-600">
+          Mọi người dân – đặc biệt là phụ nữ, trẻ em, sinh viên, người làm việc ca đêm – đều có thể sử dụng khi cảm thấy không an toàn ở nơi công cộng.
+        </p>
+      </div>
+
+      <!-- Câu hỏi 2 -->
+      <div class="bg-white rounded-lg shadow-sm px-6 py-4">
+        <h3 class="text-lg font-semibold mb-2">
+          2. Trạm có hoạt động được khi mất điện không?
+        </h3>
+        <p class="text-gray-600">
+          Có. Trạm được trang bị pin dự phòng và hệ thống cảnh báo khẩn cấp vẫn hoạt động ngay cả khi mất điện cục bộ.
+        </p>
+      </div>
+
+      <!-- Câu hỏi 3 -->
+      <div class="bg-white rounded-lg shadow-sm px-6 py-4">
+        <h3 class="text-lg font-semibold mb-2">
+          3. Làm sao để biết vị trí các trạm?
+        </h3>
+        <p class="text-gray-600">
+          Người dùng có thể xem bản đồ các trạm trú ẩn trên website chính thức hoặc qua ứng dụng di động được phát triển song song.
+        </p>
+      </div>
+
+      <!-- Câu hỏi 4 -->
+      <div class="bg-white rounded-lg shadow-sm px-6 py-4">
+        <h3 class="text-lg font-semibold mb-2">
+          4. Dữ liệu thu thập từ camera và micro có được bảo mật không?
+        </h3>
+        <p class="text-gray-600">
+          Có. Mọi thông tin đều được mã hóa và chỉ dùng trong mục đích phát hiện tình huống nguy hiểm. Chúng tôi cam kết tuân thủ nghiêm ngặt các quy định về bảo mật dữ liệu cá nhân.
+        </p>
+      </div>
+
+      <!-- Câu hỏi 5 -->
+      <div class="bg-white rounded-lg shadow-sm px-6 py-4">
+        <h3 class="text-lg font-semibold mb-2">
+          5. Làm sao để doanh nghiệp tham gia tài trợ hoặc đồng hành?
+        </h3>
+        <p class="text-gray-600">
+          Hãy truy cập mục "Hợp tác & Tài trợ" để đăng ký hoặc liên hệ với chúng tôi qua biểu mẫu hỗ trợ. Chúng tôi luôn chào đón các thương hiệu mong muốn lan tỏa giá trị tích cực tới cộng đồng.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            
+            <p class="text-gray-400 mb-4">
+              trạm bạn đồng hành thông minh 
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-tiktok-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Thông tin</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Liên hệ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Tuyển dụng</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Tin tức</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Khuyến mãi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Chính sách</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Chính sách bảo mật</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Điều khoản sử dụng</a
+                >
+             
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Liên hệ</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3 mt-0.5"
+                >
+                  <i class="ri-map-pin-line"></i>
+                </div>
+                <span class="text-gray-400"
+                  >12 Chùa Bộc- Quang Trung - Đống Đa - Hà Nội</span
+                >
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3"
+                >
+                  <i class="ri-phone-line"></i>
+                </div>
+                <span class="text-gray-400">0123 456 789</span>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-gray-400 mr-3"
+                >
+                  <i class="ri-mail-line"></i>
+                </div>
+                <span class="text-gray-400">trạm bạn đồng hành thông minh @example.com</span>
+              </li>
+            </ul>
+            <h3 class="text-lg font-semibold mt-6 mb-4">
+              Phương thức thanh toán
+            </h3>
+            <div class="flex space-x-3">
+              <div
+                class="w-10 h-6 bg-white rounded flex items-center justify-center"
+              >
+                <i class="ri-visa-fill text-blue-700"></i>
+              </div>
+              <div
+                class="w-10 h-6 bg-white rounded flex items-center justify-center"
+              >
+                <i class="ri-mastercard-fill text-red-500"></i>
+              </div>
+              <div
+                class="w-10 h-6 bg-white rounded flex items-center justify-center"
+              >
+                <i class="ri-paypal-fill text-blue-500"></i>
+              </div>
+              <div
+                class="w-10 h-6 bg-white rounded flex items-center justify-center"
+              >
+                <i class="ri-bank-card-fill text-gray-700"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6">
+          <p class="text-center text-gray-500">
+            © 2025trạm bạn đồng hành thông minh . Tất cả các quyền được bảo lưu.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Back to top button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 !rounded-button"
+    >
+      <i class="ri-arrow-up-line ri-lg"></i>
+    </button>
+    <script id="faqScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqButtons = document.querySelectorAll(
+          ".bg-white.rounded-lg.shadow-sm button",
+        );
+        faqButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector("i");
+            const isOpen = !content.classList.contains("hidden");
+            content.classList.toggle("hidden");
+            icon.style.transform = isOpen ? "rotate(0deg)" : "rotate(180deg)";
+          });
+        });
+      });
+    </script>
+    <script id="backToTopScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.remove("opacity-0", "invisible");
+            backToTopButton.classList.add("opacity-100", "visible");
+          } else {
+            backToTopButton.classList.remove("opacity-100", "visible");
+            backToTopButton.classList.add("opacity-0", "invisible");
+          }
+        });
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    
+  </body>
+</html>
